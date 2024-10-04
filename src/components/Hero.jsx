@@ -70,7 +70,16 @@ const Hero = () => {
   transition={{ duration: 1, delay: 1.5 }}
   className="flex flex-row items-center gap-6 my-4 md:mb-0 justify-center"
 >
-  
+  <motion.a
+    href="https://drive.google.com/drive/my-drive?dmr=1&ec=wgc-drive-globalnav-goto" // Add your CV link here
+    target="_blank" // Open in new tab
+    rel="noopener noreferrer" // Security feature
+    whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
+    className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
+    border-purple-400 rounded-xl text-center"
+  >
+  Download Cv
+  </motion.a>
 
   <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
     <motion.a 
@@ -127,3 +136,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
